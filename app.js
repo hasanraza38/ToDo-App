@@ -4,13 +4,15 @@
 function rendertodo() {
     ol.innerHTML=" "
     for (let i = 0; i < arr.length; i++ ) {
-
-        ol.innerHTML+=`<li> 
+        ol.innerHTML+=`
+    
+       <li> 
         ${arr[i]}
-        <button onclick="deletetodo(${i})">Delete</button>
-        <button onclick="edittodo(${i})">Edit</button>
+        <button onclick="deletetodo(${i})"  type="button" class="btn btn-outline-danger">Danger</button>
+        <button onclick="edittodo(${i})"type="button" class="btn btn-outline-success">Edit</button>
         </li>
         `
+    
     }
 }
 

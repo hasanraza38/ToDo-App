@@ -4,19 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo | App</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
-<body>
+<body id="body">
+    <div class="container mt-5 ">
+    
+        <!-- <div class="input-group">
+            <span class="input-group-text">ADD TASK</span>
+            <input id="todo" type="text" aria-label="Todo " class="form-control">
+          </div>
+    
+        <button onclick="addtodo()">click</button>
+         -->
+    
+
+         <div class="input-group flex-nowrap">
+            <input  id="todo" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+            <span class="input-group-text" id="addon-wrapping"><button onclick="addtodo()" type="button" class="btn btn-warning">ADD</button></span>
+
+        </div>
+    
+    <ol></ol>
+    
+    </div>
 
 <h1>TO DO APP</h1>
 
-    <input id="todo" type="text">
+    <!-- <input id="todo" type="text">
+    <div class="input-group">
+        <span class="input-group-text">ADD TASK</span>
+        <input id="todo" type="text" aria-label="Todo " class="form-control">
+      </div>
 
     <button onclick="addtodo()">click</button>
     
 
 
-<ol></ol>
+<ol></ol> -->
 
 
     
