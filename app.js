@@ -8,10 +8,9 @@ function rendertodo() {
     
        <li> 
         ${arr[i]}
-        <button onclick="deletetodo(${i})"  type="button" class="btn btn-outline-danger">Danger</button>
-        <button onclick="edittodo(${i})"type="button" class="btn btn-outline-success">Edit</button>
-        </li>
-        `
+        <button onclick="deletetodo(${i})"  type="button" class=" todo-button btn btn-outline-danger">Delete</button>
+        <button onclick="edittodo(${i})"type="button" class=" todo-button btn btn-outline-success">Edit</button>
+        </li> `
     
     }
 }
@@ -23,8 +22,14 @@ const ol=document.querySelector("ol")
 
 const arr=[]
 function addtodo(){
-    arr.push(input.value)
-    rendertodo()
+    // if(input.value=" "){
+    //     alert("FEILD REQUIRED!");
+    // }
+    // else{
+        
+    // }
+    arr.push(input.value);
+        rendertodo();
     input.value=" "
 }
 

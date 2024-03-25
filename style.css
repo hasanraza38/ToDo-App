@@ -10,4 +10,18 @@
 
 ol{
     color: white;
+    font-size: 30px;
+    padding: 30px;
+
+    line-height: 50px;
 }
+
+#todo-border{
+    padding: 50px;
+}
+
+
+/* .todo-button{
+
+    align-items: end;
+} */
