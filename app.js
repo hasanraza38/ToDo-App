@@ -1,6 +1,3 @@
-
-
-
 function rendertodo() {
     ol.innerHTML=" "
     for (let i = 0; i < arr.length; i++ ) {
@@ -22,15 +19,17 @@ const ol=document.querySelector("ol")
 
 const arr=[]
 function addtodo(){
-    // if(input.value=" "){
-    //     alert("FEILD REQUIRED!");
-    // }
-    // else{
-        
-    // }
-    arr.push(input.value);
-        rendertodo();
-    input.value=" "
+    if(input.value===" "){
+        alert("FEILD REQUIRED!");
+    }
+    else{
+        arr.push(input.value);
+        rendertodo();       
+        input.value=' '
+
+    }
+    
+    
 }
 
 function edittodo(index){
@@ -45,4 +44,7 @@ function deletetodo(index){
     rendertodo()
 
 }
+
+
+
 

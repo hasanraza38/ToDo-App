@@ -8,6 +8,14 @@
     background-color: #252525;
 }
 
+#heading{
+    color: #ffffff;
+    margin: 40px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    word-spacing: 2px;
+}
+
 ol{
     color: white;
     font-size: 30px;
@@ -21,7 +29,7 @@ ol{
 }
 
 
-/* .todo-button{
+.todo-button{
 
-    align-items: end;
-} */
+    text-align:end ;
+}
